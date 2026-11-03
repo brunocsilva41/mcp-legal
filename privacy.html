@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - MCP Video Publisher</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --border: #334155;
+    }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 40px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+    h1 {
+      font-size: 30px;
+      margin-top: 0;
+      color: var(--text);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 16px;
+    }
+    h2 {
+      font-size: 20px;
+      margin-top: 28px;
+      color: var(--accent);
+    }
+    p, li {
+      color: var(--muted);
+      font-size: 15px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .back-nav {
+      margin-bottom: 24px;
+      display: inline-block;
+      font-size: 14px;
+    }
+    footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--muted);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="index.html" class="back-nav">&larr; Back to Home</a>
+    <h1>Privacy Policy</h1>
+    <p><strong>Effective Date:</strong> November 3, 2026</p>
+
+    <h2>1. Introduction</h2>
+    <p>This Privacy Policy outlines how <strong>MCP Video Publisher</strong> ("Application", "we", "us") handles user data, access tokens, and media content when integrating with third-party developer platforms, specifically the <strong>TikTok for Developers API</strong> and <strong>Google YouTube Data API</strong>.</p>
+
+    <h2>2. Data We Do NOT Collect</h2>
+    <p>We respect your privacy by design. MCP Video Publisher operates primarily as a local developer tool and MCP server:</p>
+    <ul>
+      <li>We do <strong>not</strong> collect, store, sell, or rent personal data to third parties.</li>
+      <li>We do <strong>not</strong> maintain centralized databases of user videos, personal identifiers, or profile activities.</li>
+      <li>We do <strong>not</strong> utilize external tracking cookies or invasive telemetry scripts.</li>
+    </ul>
+
+    <h2>3. Authentication & API Scopes Used</h2>
+    <p>To deliver automated video publishing, the Application requests explicit consent via official OAuth 2.0 mechanisms:</p>
+    <ul>
+      <li><strong>TikTok Scopes:</strong>
+        <ul>
+          <li><code>user.info.basic</code>: Read basic account information and profile verification strictly to display the publishing channel and query posting parameters (such as privacy options and duration restrictions via <code>creator_info/query</code>).</li>
+          <li><code>video.publish</code>: Authorized strictly to initiate direct uploads of creator-specified MP4 files to the user's verified TikTok account upon user request.</li>
+        </ul>
+      </li>
+      <li><strong>Token Storage:</strong> OAuth access and refresh tokens are stored locally on the user's machine (within the protected <code>secrets/</code> folder) and are only transmitted directly to the official platform OAuth endpoints.</li>
+    </ul>
+
+    <h2>4. Third-Party Services</h2>
+    <p>When you interact with integrated platforms, your data handling is also subject to their respective privacy policies:</p>
+    <ul>
+      <li><a href="https://www.tiktok.com/legal/page/row/privacy-policy/en" target="_blank" rel="noopener">TikTok Privacy Policy</a></li>
+      <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+    </ul>
+
+    <h2>5. Data Retention, Revocation & Deletion</h2>
+    <p>Because no user data is retained on external remote servers by MCP Video Publisher:</p>
+    <ul>
+      <li><strong>Local Token Deletion:</strong> You can delete all authentication tokens instantly at any time by removing your local token files located in the project's <code>secrets/</code> directory.</li>
+      <li><strong>Permission Revocation:</strong> You can revoke the Application's access at any time through your <a href="https://www.tiktok.com/setting" target="_blank" rel="noopener">TikTok Account Settings &gt; Security &gt; Manage App Permissions</a> or Google Account Permissions.</li>
+    </ul>
+
+    <h2>6. Security</h2>
+    <p>We enforce secure protocols (HTTPS / TLS) for all communication with official platform APIs and encourage users to maintain secure local operating environments.</p>
+
+    <h2>7. Contact</h2>
+    <p>If you have any questions, feedback, or inquiries regarding this Privacy Policy, please reach out to us at: <a href="mailto:ybrunooh@gmail.com">ybrunooh@gmail.com</a>.</p>
+
+    <footer>
+      &copy; 2026 MCP Video Publisher. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
